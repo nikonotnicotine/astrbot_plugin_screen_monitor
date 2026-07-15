@@ -1,0 +1,38 @@
+{
+    "vision_api_url": {
+        "type": "string",
+        "description": "识图模型 API URL",
+        "default": "",
+        "hint": "填入 OpenAI 格式的地址"
+    },
+    "vision_api_key": {
+        "type": "string",
+        "description": "识图模型 API 密钥",
+        "default": "",
+        "hint": "对应上方 API 的密钥"
+    },
+    "vision_model_name": {
+        "type": "string",
+        "description": "识图模型名称",
+        "default": "gpt-4o",
+        "hint": "如 gpt-4o, qwen-vl-plus 等"
+    },
+    "vision_prompt": {
+        "type": "string",
+        "description": "识图模型提示词",
+        "default": "你是一个查岗助手，请直接回复，详细描述这张电脑屏幕截图的内容。务必告诉我用户现在大概在干什么（比如在写代码、看B站视频、在和谁聊天、在打什么游戏等）。",
+        "hint": "自定义视觉模型分析图片时使用的提示词"
+    },
+    "server_host": {
+        "type": "string",
+        "description": "截图服务端所在 IP",
+        "default": "127.0.0.1",
+        "hint": "运行 server.py 的电脑 IP (支持 Tailscale)"
+    },
+    "server_port": {
+        "type": "int",
+        "description": "截图服务端端口号",
+        "default": 6878,
+        "hint": "默认 6878"
+    }
+}
