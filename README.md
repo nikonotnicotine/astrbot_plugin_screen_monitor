@@ -1,6 +1,6 @@
 # AstrBot 屏幕查岗插件 (Screen Spy)
 
-这是一个为 [AstrBot](https://github.com/AstrBotDevs/AstrBot) 设计的趣味互动插件。通过本插件，大语言模型（LLM）可以通过**函数调用（Tool Calling）**能力触发你本地电脑的真实屏幕截图，并自动交给视觉大模型进行分析。当 AI 觉得你太久没理它，或者对你在干什么感到好奇时，它就可以发起“查岗”，让你们的互动更加智能、真实有趣。
+这是一个为 [AstrBot](https://github.com/AstrBotDevs/AstrBot) 设计的趣味互动插件。通过本插件，大语言模型（LLM）可以通过**函数调用（Tool Calling）**能力触发你本地电脑的真实屏幕截图，并自动交给视觉大模型进行分析。当 AI 觉得你太久没理它，或者对你在干什么感到好奇时，它就可以发起“查岗”，让你们的互动更加智能、真实有趣。可以搭配[手机查岗](https://github.com/nikonotnicotine/astrbot_plugin_phone_spy)
 
 ## 🌟 核心功能
 
