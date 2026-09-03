@@ -1,6 +1,6 @@
 name: astrbot_plugin_screen_spy
 display_name: 屏幕查岗 (Screen Spy)
-desc: 允许大模型通过发送 [查岗电脑屏幕] 触发用户本地电脑截图，并进行视觉分析回复。
-version: 1.1.0
+desc: 允许大模型调用函数工具触发用户本地电脑截图，并进行视觉分析回复。
+version: 1.1.3
 author: nikonotnicotine
 repo: https://github.com/nikonotnicotine/astrobot_plugin_screen_spy

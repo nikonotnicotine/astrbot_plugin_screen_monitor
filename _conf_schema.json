@@ -1,4 +1,22 @@
 {
+    "send_screenshot_to_user": {
+        "type": "bool",
+        "description": "是否发送查岗截图给用户",
+        "default": false,
+        "hint": "开启后，查岗时会将截图同步发给你自己看（发完即删）"
+    },
+    "screenshot_timeout": {
+        "type": "int",
+        "description": "截图请求超时时间(秒)",
+        "default": 30,
+        "hint": "若你的服务器和本地电脑网络连接较慢，请调大此值(如 30-60)"
+    },
+    "vision_api_timeout": {
+        "type": "int",
+        "description": "视觉模型解析超时时间(秒)",
+        "default": 60,
+        "hint": "视觉大模型处理图片较慢时可调大(如 60-120)"
+    },
     "vision_api_url": {
         "type": "string",
         "description": "识图模型 API URL",
@@ -34,5 +52,17 @@
         "description": "截图服务端端口号",
         "default": 6878,
         "hint": "默认 6878"
+    },
+    "auto_fallback_to_phone": {
+        "type": "bool",
+        "description": "电脑查岗失败时自动回退到手机查岗",
+        "default": false,
+        "hint": "开启后，电脑查岗失败时会自动尝试手机查岗（需要同时安装 astrbot_plugin_phone_spy 插件）"
+    },
+    "fallback_prompt_template": {
+        "type": "string",
+        "description": "回退提示模板",
+        "default": "当前电脑查岗因为{{error}}无法查看，系统建议查看手机屏幕，请调用手机查岗工具。",
+        "hint": "电脑查岗失败时返回给 AI 的提示文本，{{error}} 会被替换为具体错误原因"
     }
 }
